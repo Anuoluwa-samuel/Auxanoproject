@@ -19,7 +19,7 @@ class Product(models.Model):
 
 class Order(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
-    staff = models.ForeignKey(on_delete=models.CASCADE, null=True)
+    staff = models.ForeignKey.i(on_delete=models.CASCADE, null=True)
     order_quantity = models.PositiveIntegerField(null=True)
     date = models.DateTimeField(auto_now_add=True)
 
