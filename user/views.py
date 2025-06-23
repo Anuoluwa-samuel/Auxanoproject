@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from dja'
+from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
