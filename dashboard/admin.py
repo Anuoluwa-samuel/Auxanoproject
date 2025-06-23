@@ -9,6 +9,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = ['category',]
 # Register your models here.
 admin.site.register(Product, ProductAdmin)
+admin.site.register(order, ProductAdmin)
 
 
 # admin.site.unregister(Group)
