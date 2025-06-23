@@ -14,7 +14,7 @@ class Product(models.Model):
     quantity = models.PositiveIntegerField(null=True)
 
     class Meta:
-        verbose_name = 'Product'
+        verbose_name_plural = 'Product'
 
 
     def __str__(self):
