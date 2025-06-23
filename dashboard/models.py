@@ -21,4 +21,7 @@ class Order(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
     staff = models.ForeignKey(models.CASCADE, null=True).
     order_quantity = models.PositiveIntegerField(null=True)
-    date = models.DateTimeField(auto)
+    date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return super().__str__()
