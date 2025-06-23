@@ -102,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-CRISPY_TEMPLATE_PACK = 'uni_form'
+CRISPY_TEMPLATE_PACK = ''
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
