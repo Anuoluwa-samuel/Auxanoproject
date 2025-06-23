@@ -6,7 +6,7 @@ admin.site.site_header = 'Timeless Dashboard'
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'quantity', 'category',)
-    list_filter = ('category',)
+    list_filter = ['category',]
 # Register your models here.
 admin.site.register(Product, ProductAdmin)
 
