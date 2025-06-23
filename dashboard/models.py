@@ -24,4 +24,4 @@ class Order(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return super().__str__()
+        return f'{self.product} ordered by {self.staff} on {self.date}'
