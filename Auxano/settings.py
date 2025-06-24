@@ -139,4 +139,4 @@ STATIC_ROOT = (BASE_DIR/"asert")
 
 LOGIN_REDIRECT_URL = 'dashboard-index'
 
-
+LOGIN_URL = 'user-login'
