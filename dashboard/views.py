@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from .models import Product
@@ -24,7 +24,8 @@ def product(request):
           form = ProductForm(request.POST)  
           if form.is_valid():
                form.save()
-               
+               return redirect('')
+
      else:
           form = ProductForm()
      context = {
