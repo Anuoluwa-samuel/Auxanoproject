@@ -18,7 +18,7 @@
                                 <span class="h4"> Profile Information</span> 
                                 <hr>
                                <form method="POST">
-                                {{ user_form }}
+                                {{ user_form|crispy }}
                                 {{ profile_form|crispy }}
                                </form>
                             </div>
