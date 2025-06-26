@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
-from .models import Product
+from .models import Product, Order
 from .forms import ProductForm
 from django.contrib.auth.models import User
 
@@ -71,5 +71,6 @@ def product_update(request, pk):
 
 @login_required
 def order(request):
+     orders = Order.object.all
      return render(request, 'dashboard/order.html')
 
