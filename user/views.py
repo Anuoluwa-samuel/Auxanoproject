@@ -21,6 +21,6 @@ def register(request):
 def profile(request):
     return render(request, 'user/profile.html')
 
-def profile_(request):
-    return render(request, 'user/profile.html')
+def profile_update(request):
+    return render(request, 'user/profile_update.html')
 
