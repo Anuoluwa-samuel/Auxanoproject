@@ -45,7 +45,7 @@ def product_update(request, pk):
      if request.method == 'POST':
           form = ProductForm(request.POST, instance=item)
      else:
-          form = ProductForm()
+          form = ProductForm(instance=item
      context = {
           'form': form
      }     
