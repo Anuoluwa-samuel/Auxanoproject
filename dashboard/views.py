@@ -47,7 +47,7 @@ def product_update(request, pk):
      else:
           form = ProductForm()
      context = {
-          'form':form
+          'form': form
      }     
      return render(request, 'dashboard/product_update.html', context)
 
