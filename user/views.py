@@ -23,7 +23,7 @@ def profile(request):
 
 def profile_update(request):
     context = {
-        
+
     }
-    return render(request, 'user/profile_update', context)
+    return render(request, 'user/profile_update.html', context)
 
