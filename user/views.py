@@ -23,7 +23,7 @@ def profile(request):
 
 def profile_update(request):
     if request.method=='POST':
-        form = UserUpdateForm
+        form = UserUpdateForm(request.POST, instance=request.user)
     context = {
 
     }
