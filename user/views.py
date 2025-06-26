@@ -22,7 +22,8 @@ def profile(request):
     return render(request, 'user/profile.html')
 
 def profile_update(request):
-    IF 
+    if request.method=='POST':
+        form = UserUpdateForm
     context = {
 
     }
