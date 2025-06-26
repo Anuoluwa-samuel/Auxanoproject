@@ -18,7 +18,7 @@ def product(request):
      context = {
           'items': items,
      }
-     return render(request, 'dashboard/product.html')
+     return render(request, 'dashboard/product.html', context)
 
 @login_required
 def order(request):
