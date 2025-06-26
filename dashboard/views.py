@@ -37,3 +37,6 @@ def product(request):
 @login_required
 def order(request):
      return render(request, 'dashboard/order.html')
+
+def product_delete(request):
+     return render(request, 'dashboard/product_delete.html')
