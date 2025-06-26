@@ -21,8 +21,8 @@ def product(request):
      #items = Product.objects.raw('SELECT * FROM dashboard_product')
      
      if request.method == 'POST':
-          
-           context = {
+          form = ProductForm(request.POST)     
+      context = {
           'items': items,
      }
      return render(request, 'dashboard/product.html', context)
