@@ -24,6 +24,7 @@ def product(request):
           form = ProductForm(request.POST)     
       context = {
           'items': items,
+          'form': form, 
      }
      return render(request, 'dashboard/product.html', context)
 
