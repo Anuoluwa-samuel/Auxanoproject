@@ -12,7 +12,7 @@
                
                     <form method="POST">
                         {% csrf_token %}
-                        {{ form| }}
+                        {{ form|crispy }}
                         <a class="btn btn-dark" href="{% url 'dashboard-product' %}">Cancel</a>
                         <input class="btn btn-info" type="submit" value="Update">
                     </form>

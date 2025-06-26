@@ -43,7 +43,7 @@ def product_delete(request, pk):
 
 def product_update(request, pk):
      if request.method == 'POST':
-          form = ProductForm(request.POST)
+          form = ProductForm(request.POST, instance=item)
      else:
           form = ProductForm()
      context = {
