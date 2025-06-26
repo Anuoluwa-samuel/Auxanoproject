@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from .models import Product
 from .forms import ProductForm
+from django.contrib.auth.models import User
 
 # Create your views here.
 @login_required
