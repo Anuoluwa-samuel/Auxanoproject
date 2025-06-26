@@ -36,6 +36,9 @@ def product(request):
 
 def product_delete(request, pk):
      item = Product.objects.get(id=pk)
+     if request.method == 'POST':
+          item.delete()
+          return redirect('dashboard-product')
      return render(request, 'dashboard/product_delete.html')
 
 
