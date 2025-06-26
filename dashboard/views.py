@@ -71,7 +71,7 @@ def product_update(request, pk):
 
 @login_required
 def order(request):
-     orders = Order.object.all()
+     orders = Order.objects.all()
      context = {
           'orders':orders
      }
