@@ -20,6 +20,7 @@ def staff(request):
      return render(request, 'dashboard/staff.html', context)
 
 def staff_detail(request, pk):
+     workers = User.objects.get(id=pl)
      return render(request, 'dashboard/staff_detail.html')
 
 @login_required
