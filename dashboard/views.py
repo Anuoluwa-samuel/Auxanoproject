@@ -19,6 +19,7 @@ def staff(request):
 def product(request):
      items = Product.objects.all() # Using ORM
      #items = Product.objects.raw('SELECT * FROM dashboard_product')
+     
      context = {
           'items': items,
      }
