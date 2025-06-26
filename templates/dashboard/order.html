@@ -18,6 +18,7 @@
                             <th scope="col">Category</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Order by</th>
+                            <th scope="col">Date</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,6 +29,9 @@
                             <td>{{orders.order_quantity}}</td>
                             <td>
                                 {{ orders.staff.username}}
+                            </td>
+                            <td>
+                                {{ orders.date}}
                             </td>
                         </tr>
                         {% endfor %}
