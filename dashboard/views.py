@@ -43,9 +43,11 @@ def product_delete(request, pk):
 
 def product_update(request, pk):
      if request.method == 'POST':
-          form = ProductForm(request.POST, instance=item)
+          form = ProductForm(request.POST)
+     else:
+          form = ProductForm()
      context = {
-
+          'form':form
      }     
      return render(request, 'dashboard/product_update.html', context)
 
