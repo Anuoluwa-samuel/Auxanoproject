@@ -24,7 +24,7 @@ def staff_detail(request, pk):
      context = {
           'workers': workers
      }
-     return render(request, 'dashboard/staff_detail.html')
+     return render(request, 'dashboard/staff_detail.html', context)
 
 @login_required
 def product(request):
