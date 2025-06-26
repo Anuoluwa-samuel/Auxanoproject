@@ -13,7 +13,11 @@ def index(request):
 
 @login_required
 def staff(request):
-     return render(request, 'dashboard/staff.html')
+     workers = user.object.all
+     context = {
+          'workers': workers
+     }
+     return render(request, 'dashboard/staff.html',co)
 
 
 @login_required
