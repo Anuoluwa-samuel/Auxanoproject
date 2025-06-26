@@ -19,6 +19,7 @@ def staff(request):
      }
      return render(request, 'dashboard/staff.html', context)
 
+@login_required
 def staff_detail(request, pk):
      workers = User.objects.get(id=pk)
      context = {
@@ -45,6 +46,7 @@ def product(request):
      }
      return render(request, 'dashboard/product.html', context)
 
+@login_required
 def product_delete(request, pk):
      item = Product.objects.get(id=pk)
      if request.method == 'POST':
@@ -52,6 +54,7 @@ def product_delete(request, pk):
           return redirect('dashboard-product')
      return render(request, 'dashboard/product_delete.html')
 
+@login_required
 def product_update(request, pk):
      item = Product.objects.get(id=pk)
      if request.method == 'POST':
