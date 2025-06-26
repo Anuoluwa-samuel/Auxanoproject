@@ -13,7 +13,7 @@ def index(request):
 
 @login_required
 def staff(request):
-     workers = user.object.all()
+     workers = User.objects.all()
      context = {
           'workers': workers
      }
