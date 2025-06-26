@@ -20,7 +20,9 @@ def product(request):
      items = Product.objects.all() # Using ORM
      #items = Product.objects.raw('SELECT * FROM dashboard_product')
      
-     context = {
+     if request.method == 'POST':
+          
+           context = {
           'items': items,
      }
      return render(request, 'dashboard/product.html', context)
