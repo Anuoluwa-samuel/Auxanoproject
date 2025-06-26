@@ -142,4 +142,4 @@ MEDIA_URL =' /media/'
 
 LOGIN_REDIRECT_URL = 'dashboard-index'
 
-LOGIN_URL = 'Login'
+LOGIN_URL = 'user-login'
