@@ -24,8 +24,8 @@
                         {% for orders in orders%}
                         <tr>
                             <td>{{orders.product}}</td>
-                            <td>{{orders.category}}</td>
-                            <td>@{{orders.orders_quantity}}</td>
+                            <td>{{orders.product.category}}</td>
+                            <td>{{orders.order_quantity}}</td>
                             <td>
                                 Broni
                             </td>
