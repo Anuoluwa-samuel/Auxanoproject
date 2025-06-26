@@ -41,8 +41,11 @@ def product_delete(request, pk):
           return redirect('dashboard-product')
      return render(request, 'dashboard/product_delete.html')
 
-def product_edit(request, pk):
-     return render
+def product_update(request, pk):
+     context:{
+
+     }
+     return render(request, 'dashboard/product_update.html', context)
 
 @login_required
 def order(request):
