@@ -47,6 +47,7 @@ def product_update(request, pk):
           form = ProductForm(request.POST, instance=item)
           if form.is_valid():
                form.save()
+               return redirect('dashboard-product')
      else:
           form = ProductForm(instance=item)
      context = {
