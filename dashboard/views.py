@@ -42,7 +42,9 @@ def product_delete(request, pk):
      return render(request, 'dashboard/product_delete.html')
 
 def product_update(request, pk):
+     context = {
           
+     }     
      return render(request, 'dashboard/product_update.html', context)
 
 @login_required
