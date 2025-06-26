@@ -22,7 +22,7 @@ def register(request):
 def profile(request):
     return render(request, 'user/profile.html')
 
-
+@login_required
 def profile_update(request):
     if request.method=='POST':
         user_form = UserUpdateForm(request.POST, instance=request.user)
