@@ -43,7 +43,7 @@ def product_delete(request, pk):
 
 def product_update(request, pk):
      context:{
-
+          
      }
      return render(request, 'dashboard/product_update.html', context)
 
