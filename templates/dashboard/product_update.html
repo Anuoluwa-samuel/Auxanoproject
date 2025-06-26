@@ -6,12 +6,9 @@
     <div class="row mt-5">
         <div class="col-md-6 offset-md-3">
             <div class="border bg-white p-3">
-                <h3>Delete Item</h3>
+                <h3>Edit Item</h3>
                 <hr>
-                <div>
-                    <div class="alert alert-danger">
-                        <h4>Are You Sure You Want To Delete?</h4>
-                    </div>
+               
                     <form method="POST">
                         {% csrf_token %}
                         {{ form }}
