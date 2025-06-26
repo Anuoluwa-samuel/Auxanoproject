@@ -27,8 +27,9 @@ def profile_update(request):
         profile_form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
     else:
         user_form = UserUpdateForm(instance=request.user)
+        profile_form = ProfileUpdateForm(instance=request.user.profile)
     context = {
-
+        
     }
     return render(request, 'user/profile_update.html', context)
 
