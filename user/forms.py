@@ -13,3 +13,7 @@ class UserUpdateForms(forms.ModelForm):
     class Meta:
         model = User
         fields = ['username', 'email']
+
+class ProfileUpdateForms(forms.ModelForm):
+    class Meta:
+        model 
