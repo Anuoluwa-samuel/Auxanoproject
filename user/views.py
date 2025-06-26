@@ -20,3 +20,5 @@ def register(request):
 
 def profile(request):
     return render(request, 'user/profile.html')
+
+def profile_up
