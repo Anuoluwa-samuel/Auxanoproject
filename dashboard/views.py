@@ -17,7 +17,7 @@ def staff(request):
      context = {
           'workers': workers
      }
-     return render(request, 'dashboard/staff.html',co)
+     return render(request, 'dashboard/staff.html', context)
 
 
 @login_required
