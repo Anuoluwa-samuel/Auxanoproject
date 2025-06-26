@@ -8,4 +8,6 @@ class CreateUserForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
-class UserUpdateForms(forms)        
+class UserUpdateForms(forms.ModelForm):
+    class Meta:
+               
