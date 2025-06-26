@@ -19,6 +19,8 @@ def staff(request):
      }
      return render(request, 'dashboard/staff.html', context)
 
+def staff_detail(request):
+     
 
 @login_required
 def product(request):
