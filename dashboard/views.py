@@ -41,6 +41,8 @@ def product_delete(request, pk):
           return redirect('dashboard-product')
      return render(request, 'dashboard/product_delete.html')
 
+def product_edit(request, pk):
+     return render
 
 @login_required
 def order(request):
