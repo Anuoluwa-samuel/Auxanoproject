@@ -8,14 +8,16 @@ from .models import Product
 def index(request):
     return render(request, 'dashboard/index.html')
 
+
 @login_required
 def staff(request):
      return render(request, 'dashboard/staff.html')
 
+
 @login_required
 def product(request):
      #items = Product.objects.all()
-     items = Product.objects.raw('SELECT * FROM das')
+     items = Product.objects.raw('SELECT * FROM dashboard_product')
      context = {
           'items': items,
      }
