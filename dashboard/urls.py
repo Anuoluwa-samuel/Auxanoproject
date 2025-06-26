@@ -6,5 +6,30 @@ urlpatterns = [
     path('staff/', views.staff, name='dashboard-staff'),
     path('product/', views.product, name='dashboard-product'),
     path('order/', views.order, name='dashboard-order'),   
-    path('user/Profile/update/', views.profile_update, name='profile_update'),
+    path('user/Profile' \
+    '' \
+    '
+    ' \
+    '
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    update/', views.profile_update, name='profile_update'),
 ]
