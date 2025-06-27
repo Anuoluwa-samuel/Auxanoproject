@@ -11,8 +11,6 @@ def index(request):
      orders = Order.objects.all()
      if request.method =='POST':
           form = OrderForm(request.POST)
-         
-
      else:
          form = OrderForm()
      context = {
