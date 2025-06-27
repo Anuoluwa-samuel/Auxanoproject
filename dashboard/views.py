@@ -8,15 +8,16 @@ from django.contrib.auth.models import User
 # Create your views here.
 @login_required
 def index(request):
-    orders = Order.objects.all()
+     orders = Order.objects.all()
      if request.method == 'POST':
          form = OrderForm(request.POST)
      else:
          form = OrderForm()
-    context = {
-         'orders': orders
-    }
-    return render(request, 'dashboard/index.html', context)
+     context = {
+         'orders': orders,
+         'form': form,
+     }
+     return render(request, 'dashboard/index.html', context)
 
 
 @login_required
