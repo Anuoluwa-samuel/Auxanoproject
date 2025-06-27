@@ -29,12 +29,13 @@
                         </thead>
                         <tbody>
                             {% for order in orders %}
+                            
                             <tr>
                                 <td>{{ order.product.name }}</td>
                                 <td>{{ order.product.category }}</td>
                                 <td>{{ order.order_quantity }}</td>
                             </tr>
-						
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>
