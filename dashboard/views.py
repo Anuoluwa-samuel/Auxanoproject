@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 @login_required
 def index(request):
      orders = Order.objects.all()
-     if request.method == 'POST':
+     if request.method=='POST':
          form = OrderForm(request.POST)
      else:
          form = OrderForm()
