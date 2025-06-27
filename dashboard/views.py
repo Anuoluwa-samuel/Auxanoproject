@@ -12,8 +12,8 @@ def index(request):
      if request.method =='POST':
           form = OrderForm(request.POST)
           if form.is_valid():
-               form.save()
-               return redirect('dashboard-index')
+              instance = form.save()
+              return redirect('dashboard-index')
           
      else:
          form = OrderForm()
