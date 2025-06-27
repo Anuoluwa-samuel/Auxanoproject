@@ -21,9 +21,9 @@
                                 class="sr-only">(current)</span></a>
                     </li>
                     
-                    <form class="btn btn" action="{% url 'user-logout' %}" method="post">
+                    <form class="nav-link text-white" action="{% url 'user-logout' %}" method="post">
                             {% csrf_token %}
-                         <button class= type="submit">Logout</button>
+                         <button class="btn " type="submit">Logout</button>
                     </form>
                 </ul>
                 {% else %}
