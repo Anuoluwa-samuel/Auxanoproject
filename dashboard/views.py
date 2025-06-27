@@ -12,7 +12,9 @@ def index(request):
      if request.method =='POST':
           form = OrderForm(request.POST)
           if form.is_valid():
-              instance = form.save()
+              instance = form.save(commit=False)
+              instance.staff = request.user
+              instance.save()
               return redirect('dashboard-index')
           
      else:
