@@ -53,7 +53,7 @@ def product(request):
           if form.is_valid():
                form.save()
                product_name = form.cleaned_data.get('name')
-               messages.success(request, f'{product}')
+               messages.success(request, f'{product_name} has been added')
                return redirect('dashboard-product')
 
      else:
