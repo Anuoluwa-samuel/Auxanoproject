@@ -10,9 +10,9 @@ from django.contrib.auth.models import User
 def index(request):
     orders = Order.objects.all()
     context = {
-         
+         'orders': orders
     }
-    return render(request, 'dashboard/index.html')
+    return render(request, 'dashboard/index.html', context)
 
 
 @login_required
