@@ -19,7 +19,7 @@
                                 labels: [{% for order in orders %} '{{ order.product.name }}', {% endfor %}],
                                 datasets: [{
                                     label: 'Orders',
-                                    data: [{% for order in orders %} '{{ order.product.name }}', {% endfor %}],
+                                    data: [{% for order in orders %} '{{ order.order_quantity }}', {% endfor %}],
                                     backgroundColor: [
                                         'rgba(255, 99, 132, 1)',
                                         'rgba(54, 162, 235, 1)',
