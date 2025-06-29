@@ -95,10 +95,11 @@ def product_update(request, pk):
 @login_required
 def order(request):
      orders = Order.objects.all()
-      workers_count = User.objects.all().count
+     workers_count = User.objects.all().count
+
      context = {
           'orders':orders
-          'workers_count': workers_count,
+          
      }
      return render(request, 'dashboard/order.html', context)
 
