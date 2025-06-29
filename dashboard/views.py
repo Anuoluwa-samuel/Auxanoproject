@@ -96,11 +96,11 @@ def product_update(request, pk):
 def order(request):
      orders = Order.objects.all()
      workers_count = User.objects.all().count
-
+     orders_count = orders.count()
      context = {
           'orders':orders,
           'workers_count': workers_count,
-          'workers_count': workers_count,
+          'orders_count': orders_count,
           
      }
      return render(request, 'dashboard/order.html', context)
