@@ -24,7 +24,7 @@ def index(request):
      context = {
          'orders': orders,
          'form': form,
-         'products': products
+         'products': products,
      }
      return render(request, 'dashboard/index.html', context)
 
