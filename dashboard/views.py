@@ -98,7 +98,9 @@ def order(request):
      workers_count = User.objects.all().count
 
      context = {
-          'orders':orders
+          'orders':orders,
+          'workers_count': workers_count,
+          'workers_count': workers_count,
           
      }
      return render(request, 'dashboard/order.html', context)
