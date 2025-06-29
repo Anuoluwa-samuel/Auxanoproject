@@ -51,7 +51,8 @@ def staff_detail(request, pk):
 def product(request):
      items = Product.objects.all() # Using ORM
      #items = Product.objects.raw('SELECT * FROM dashboard_product')
-     
+     workers = User.objects.all().count
+     workers_count = workers.count()
      if request.method == 'POST':
           form = ProductForm(request.POST)  
           if form.is_valid():
