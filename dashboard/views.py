@@ -39,6 +39,7 @@ def staff(request):
           'workers': workers,
           'workers_count': workers_count,
           'orders_count': orders_count,
+          'items_count' : items_count,
      }
      return render(request, 'dashboard/staff.html', context)
 
