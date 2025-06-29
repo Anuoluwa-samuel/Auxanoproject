@@ -33,7 +33,7 @@ def index(request):
 def staff(request):
      workers = User.objects.all()
      workers_count = workers.count()
-     orders_count = orders.count()
+     orders = Order.objects.all().count
      context = {
           'workers': workers,
           'workers_count': workers_count,
