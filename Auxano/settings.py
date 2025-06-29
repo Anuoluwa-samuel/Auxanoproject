@@ -149,4 +149,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'Ayomidesamuel365@gmail.com'
-EMAIL_HOST_PASSWORD = 'My name is Ogunyemi Ayomide Samuel.'
+EMAIL_HOST_PASSWORD = 'nzgdhetpgwkhxisj'
