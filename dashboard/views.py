@@ -34,6 +34,7 @@ def staff(request):
      workers = User.objects.all()
      workers_count = workers.count()
      orders_count = Order.objects.all().count
+     items_count = Product.objects.all().count
      context = {
           'workers': workers,
           'workers_count': workers_count,
