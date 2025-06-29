@@ -13,7 +13,7 @@ def index(request):
      products = Product.objects.all()
      products_count = Product.objects.all().count
      orders_count = Order.objects.all().count
-     staff_count = User.objects.all().count
+     workers_count = User.objects.all().count
      
      
      if request.method =='POST':
@@ -32,6 +32,7 @@ def index(request):
          'products': products,
          'products_count': products_count,
          'orders_count': orders_count,
+         'workers_count': workers_count
      }
      return render(request, 'dashboard/index.html', context)
 
