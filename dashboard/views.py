@@ -11,6 +11,10 @@ from django.contrib import messages
 def index(request):
      orders = Order.objects.all()
      products = Product.objects.all()
+     products_count = Product.objects.all().count
+     orders_count = Order.objects.all().count
+     
+     
      if request.method =='POST':
           form = OrderForm(request.POST)
           if form.is_valid():
