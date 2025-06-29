@@ -110,9 +110,7 @@ def order(request):
           'orders':orders,
           'workers_count': workers_count,
           'orders_count': orders_count,
-          'items_count' = items_count,
-          
-          
+          'items_count': items_count
      }
      return render(request, 'dashboard/order.html', context)
 
