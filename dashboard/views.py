@@ -33,9 +33,11 @@ def index(request):
 def staff(request):
      workers = User.objects.all()
      workers_count = workers.count()
+     orders_count = orders.count()
      context = {
           'workers': workers,
-          'workers_count': workers_count
+          'workers_count': workers_count,
+          'orders_count': orders_count,
      }
      return render(request, 'dashboard/staff.html', context)
 
@@ -52,6 +54,7 @@ def product(request):
      items = Product.objects.all() # Using ORM
      #items = Product.objects.raw('SELECT * FROM dashboard_product')
      workers_count = User.objects.all().count
+     orders_count = orders.count()
      if request.method == 'POST':
           form = ProductForm(request.POST)  
           if form.is_valid():
@@ -66,6 +69,7 @@ def product(request):
           'items': items,
           'form': form, 
           'workers_count': workers_count,
+          'orders_count': orders_count,
      }
      return render(request, 'dashboard/product.html', context)
 
