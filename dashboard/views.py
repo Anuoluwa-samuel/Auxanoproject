@@ -11,7 +11,7 @@ from django.contrib import messages
 def index(request):
      orders = Order.objects.all()
      products = Product.objects.all()
-     products_count = Product.objects.all().count
+     product_count = Product.objects.all().count
      orders_count = Order.objects.all().count
      workers_count = User.objects.all().count
      
@@ -30,7 +30,7 @@ def index(request):
          'orders': orders,
          'form': form,
          'products': products,
-         'products_count': products_count,
+         'product_count': product_count,
          'orders_count': orders_count,
          'workers_count': workers_count
      }
