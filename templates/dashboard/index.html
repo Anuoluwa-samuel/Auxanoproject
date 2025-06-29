@@ -16,9 +16,9 @@
                         var myChart1 = new Chart(ctx, {
                             type: 'pie',
                             data: {
-                                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                                labels: [{% FOR Orders in Orders%}],
                                 datasets: [{
-                                    label: 'Products',
+                                    label: 'Orders',
                                     data: [12, 19, 3, 5, 2, 3],
                                     backgroundColor: [
                                         'rgba(255, 99, 132, 1)',
