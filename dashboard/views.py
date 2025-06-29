@@ -33,7 +33,7 @@ def index(request):
 def staff(request):
      workers = User.objects.all()
      workers_count = workers.count()
-     orders = Order.objects.all().count
+     orders_count = Order.objects.all().count
      context = {
           'workers': workers,
           'workers_count': workers_count,
@@ -54,7 +54,8 @@ def product(request):
      items = Product.objects.all() # Using ORM
      #items = Product.objects.raw('SELECT * FROM dashboard_product')
      workers_count = User.objects.all().count
-     orders = Order.objects.all().count
+     orders_count = Order.objects.all().count
+     item_count = item.count 
      if request.method == 'POST':
           form = ProductForm(request.POST)  
           if form.is_valid():
