@@ -105,11 +105,13 @@ def order(request):
      orders = Order.objects.all()
      workers_count = User.objects.all().count
      orders_count = orders.count()
-     items = Product.objects.all().count 
+     items_count = Product.objects.all().count 
      context = {
           'orders':orders,
           'workers_count': workers_count,
           'orders_count': orders_count,
+          'items_count' = items_count,
+          
           
      }
      return render(request, 'dashboard/order.html', context)
