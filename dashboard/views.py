@@ -39,7 +39,7 @@ def staff(request):
           'workers': workers,
           'workers_count': workers_count,
           'orders_count': orders_count,
-          'product_count ' : items_count,
+          'product_count': product_count,
      }
      return render(request, 'dashboard/staff.html', context)
 
@@ -57,7 +57,7 @@ def product(request):
      #items = Product.objects.raw('SELECT * FROM dashboard_product')
      workers_count = User.objects.all().count
      orders_count = Order.objects.all().count
-     pro = items.count 
+     product_count = items.count 
      if request.method == 'POST':
           form = ProductForm(request.POST)  
           if form.is_valid():
@@ -73,7 +73,7 @@ def product(request):
           'form': form, 
           'workers_count': workers_count,
           'orders_count': orders_count,
-          'pro': pro,
+          'product_count': product_count,
      }
      return render(request, 'dashboard/product.html', context)
 
@@ -110,7 +110,7 @@ def order(request):
           'orders':orders,
           'workers_count': workers_count,
           'orders_count': orders_count,
-          'product_count': items_count
+          'product_count': product_count,
      }
      return render(request, 'dashboard/order.html', context)
 
