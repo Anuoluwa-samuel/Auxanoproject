@@ -54,7 +54,7 @@ def product(request):
      items = Product.objects.all() # Using ORM
      #items = Product.objects.raw('SELECT * FROM dashboard_product')
      workers_count = User.objects.all().count
-     orders_count = orders.count()
+     orders = Order.objects.all().count
      if request.method == 'POST':
           form = ProductForm(request.POST)  
           if form.is_valid():
