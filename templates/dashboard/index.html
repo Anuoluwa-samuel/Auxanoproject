@@ -16,7 +16,7 @@
                         var myChart1 = new Chart(ctx, {
                             type: 'pie',
                             data: {
-                                labels: [{% for Order in Orders %} '{{ order.products.name }}', {% endfor %}],
+                                labels: [{% for Order in Orders %} '{{ order.product.name }}', {% endfor %}],
                                 datasets: [{
                                     label: 'Orders',
                                     data: [12, 19, 3, 5, 2, 3],
