@@ -39,5 +39,5 @@ def profile_update(request):
     context = {
         'user_form': user_form,
         'profile_form': profile_form,
-    }
+            }
     return render(request, 'user/profile_update.html', context)
