@@ -3,7 +3,7 @@ from .models import Product
 from .models import Order
 from django.contrib.auth.models import Group
 
-admin.site.site_header = 'Timeless Dashboard'
+admin.site.site_header = 'Inventra Dashboard'
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'quantity', 'category',)
