@@ -40,13 +40,7 @@ INSTALLED_APPS = [
     'dashboard.apps.DashboardConfig',
     'user.apps.UserConfig',
     'crispy_forms',
-    'crispy_bootstrap4',
-    'django_otp',
-    'django_otp.plugins.otp_totp',
-    'two_factor',
-    'two_factor.plugins.phonenumber',
-    'two_factor.plugins.email',
-    'qrcode',
+    'crispy_bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -57,7 +51,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_otp.middleware.OTPMiddleware',
 ]
 
 ROOT_URLCONF = 'Auxano.urls'
